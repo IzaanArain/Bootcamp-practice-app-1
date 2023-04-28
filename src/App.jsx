@@ -30,10 +30,9 @@ const App = () => {
   const [data, setDate] = useState(people);
 
   const HandleClick=()=>{
-    let newData=[...data]
-    newData[0].name="salaman"
-    // console.log(newData)
-    setDate(newData)
+   let newData=[...data]
+   newData[0].name="salman"
+   setDate(newData)
   }
   return (
     <>
