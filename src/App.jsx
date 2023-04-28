@@ -1,5 +1,6 @@
 import Header from "./Components/Header";
-import Main, { Child1, Child2 } from "./Components/Main";
+import Main from "./Components/Main";
+import { Child1, Child2 } from "./Components/Main"
 import Footer from "./Components/Footer";
 import { useState } from "react";
 
@@ -38,8 +39,8 @@ const App = () => {
     <>
       <Header />
       <Main data={data} click={HandleClick}/>
-      <Child1 />
-      <Child2 />
+      {/* <Child1 /> */}
+      {/* <Child2 /> */}
       <Footer />
     </>
   );

@@ -1,13 +1,14 @@
 const Main = ({ data,click}) => {
   return (
     <div>
-      <h2>{data[1].mail}</h2>
+      {/* <h2>{data[1].mail}</h2> */}
 
-      <button onClick={click}>Click</button>
 
       {data.map((val)=>{
         return <h1 key={val.id}>{val.name}</h1>
       })}
+
+      <button onClick={click}>Click</button>
 
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
@@ -27,20 +28,24 @@ const Main = ({ data,click}) => {
     </div>
   );
 };
-export const Child1 = () => {
-  return (
-    <>
-      <h2>this is child 1</h2>
-    </>
-  );
-};
-
-export const Child2 = () => {
-  return (
-    <>
-      <h2>this is child 2</h2>
-    </>
-  );
-};
 
 export default Main;
+
+
+// export const Child1 = () => {
+//   return (
+//     <>
+//       <h2>this is child 1</h2>
+//     </>
+//   );
+// };
+
+// export const Child2 = () => {
+//   return (
+//     <>
+//       <h2>this is child 2</h2>
+//     </>
+//   );
+// };
+
+
